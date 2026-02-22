@@ -1,0 +1,16 @@
+[project]
+name = "cyber-flux-worker-secure-k2w"
+version = "0.1.0"
+description = "GraphQL API gateway service"
+requires-python = ">=3.10"
+dependencies = ["fastapi", "pydantic", "httpx"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "mypy", "ruff"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
